@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  _border: 1px solid black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  color: #333;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: whitesmoke;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 5rem) / 2);
+}
+
+.col-1-of-2-30 {
+  width: calc((70% - 5rem) / 2);
+}
+
+.col-1-of-2-70 {
+  width: calc((130% - 5rem) / 2);
+}
+
+.col-1-of-3 {
+  width: calc((100% - 2 * 5rem) / 3);
+}
+
+.col-2-of-3 {
+  width: calc(2 * (100% - 2 * 5rem) / 3 + 5rem);
+  float: left;
+}
+
+.col-1-of-4 {
+  width: calc((100% - 3 * 5rem) / 4);
+}
+
+.col-2-of-4 {
+  width: calc(2 * (100% - 3 * 5rem) / 4 + 5rem);
+}
+
+.col-3-of-4 {
+  width: calc(3 * (100% - 3 * 5rem) / 4 + 2 * 5rem);
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+[class*="col-"]:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.btn{
+    color: #fff;
+    width: 100px;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+.heading-secondary {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.heading-secondary::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #3498db;
+  margin: 15px auto 20px auto;
+}
+
+.section-book {
+  background: linear-gradient(
+    to right bottom,
+    rgba(189, 195, 199, 1),
+    rgba(41, 128, 185, 0.5)
+  );
+  padding: 15rem 0;
+}
+
+.center-me {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.book {
+  padding: 5rem 3rem 6rem;
+  _height: 60rem;
+}
+
+.form {
+  _text-align: center;
+}
+
+[class*="form__input"]:focus {
+  outline: none;
+}
+
+.form__input {
+  display: inline-block;
+  padding: 1rem 0.8rem;
+  width: 100%;
+}
+
+.form__input--textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form__checkbox-input {
+  margin-right: 1rem;
+}
+
+.form__group {
+  display: block;
+  width: 100%;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}

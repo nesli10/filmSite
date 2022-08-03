@@ -1,0 +1,398 @@
+@keyframes sagdanOrtaya{
+	from{
+		right:-950px;
+		}to{
+			right:0px;
+			}
+	
+	}
+@keyframes ortadanSola{
+	from{
+		right:0;
+		}to{
+		right:950px;
+		}
+	}
+@keyframes aciklama{
+	from{
+		left:100%;
+		}to{
+			left:1em;
+			}
+	}
+@keyframes aciklamaGit{
+	from{
+		left:1em;
+		}to{
+			left:-10em;
+			}
+	}
+ 
+
+.anaDiv{
+	width:950px;
+	height:427px;
+	border:1px solid green;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+	}
+.slide{
+	width:950px;
+	height:427px;
+	position:absolute;
+	top:0;
+	right:-950px;
+	}
+.slide img{
+	width:100%;
+	height:100%;
+	}
+.btnSag,.btnSol{
+	padding:0.25em 0.5em;
+	background-color:#90C;
+	color:white;
+	text-align:center;
+	border:1px solid white;
+	position:absolute;
+	top:45%;
+	opacity:0.5;
+	cursor:pointer;
+	font-weight:bold;
+	transition:all 0.5s ease;
+	}
+.btnSag:hover,.btnSol:hover{
+	opacity:1;
+	transform:rotate(360deg);
+	border-radius:50%;
+	}
+.btnSag{ right:1em;}
+.btnSol{left:1em}
+.aciklama{
+	width: auto;
+	height:auto;
+	padding:0.5em;
+	background-color:rgba(153,102,255,0.6);
+	color:white;
+	position:absolute;
+	bottom:1em;
+	left:100%;
+	}
+.anaDiv ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:-10em;
+	z-index:1;
+	padding:1em;
+	background-color:rgba(153,102,255,0.3);
+	transition:all 0.5s ease; 
+	box-shadow:0px 5px 5px #333;
+	}
+.anaDiv ul li{
+	width:10%;
+	height:7vh;
+	overflow:hidden;
+	display:inline-block;
+	border:2px solid transparent;
+	transition:all 0.5s ease;
+	
+	}
+.anaDiv ul li img{
+	width:100%;
+	height:100%;
+	}
+.anaDiv ul li:hover{
+	border-color:white;
+	
+	}
+.anaDiv:hover ul{
+	top:0em;
+	}
+
+	
+/********popülerfilmler*********/
+
+body {
+  min-height: 2000px;
+}
+
+#carousel {
+	width:1440px;
+	height:auto;	
+	margin:0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 205;
+}
+
+@media (max-width: 1440px) {
+    #carousel {
+        width:100%;
+    }
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:100%;
+	height:315px;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:absolute;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+    display: flex;
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:260px;
+	height:auto;	
+	float:left;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+#slides li img {
+    width: 100%;
+}
+
+.img-container {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.product__item__pic1{
+	height: 200px;
+    position: relative;
+    border-radius: 5px;
+}
+.product__item__pic1 .view {
+    font-size: 13px;
+    color: #ffffff;
+    background: #3d3d3d;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.product__item__pic1 .ep {
+    font-size: 13px;
+    color: #ffffff;
+    background: #e53637;
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#slides li p {
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+/* Styling for prev and next buttons */
+#buttons {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttons a {
+	display:block; 
+	width:31px; 
+	height:32px;
+	float:left;
+	outline:0;
+}
+
+a#prev, a#next {
+    font-size: 20px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    
+    height: 210px;
+}
+
+.clear {clear:both}
+
+@media (max-width: 1440px) {
+  #carousel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  #slides li {
+    width: 100px;
+  }
+
+  .img-container {
+    height: 100px;
+  }
+
+  a#prev,
+  a#next {
+    display: none;
+  }
+
+}
+
+/********ROMANTİKSLİDER**********/
+
+body {
+  min-height: 2000px;
+}
+
+#carouselR {
+	width:1440px;
+	height:auto;	
+	margin:0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 205;
+}
+
+@media (max-width: 1440px) {
+    #carouselR {
+        width:100%;
+    }
+}
+
+#slidesR {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:100%;
+	height:315px;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slidesR ul {
+	position:absolute;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+    display: flex;
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slidesR li {
+	width:260px;
+	height:auto;	
+	float:left;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+#slidesR li img {
+    width: 100%;
+}
+
+.img-container {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.product__item__pic1{
+	height: 200px;
+    position: relative;
+    border-radius: 5px;
+}
+.product__item__pic1 .view {
+    font-size: 13px;
+    color: #ffffff;
+    background: #3d3d3d;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.product__item__pic1 .ep {
+    font-size: 13px;
+    color: #ffffff;
+    background: #e53637;
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#slidesR li p {
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+/* Styling for prev and next buttons */
+#buttonsR {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttonsR a {
+	display:block; 
+	width:31px; 
+	height:32px;
+	float:left;
+	outline:0;
+}
+
+a#prevR, a#nextR {
+    font-size: 20px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    
+    height: 210px;
+}
+
+.clear {clear:both}
+
+@media (max-width: 1440px) {
+  #carousel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  #slidesR li {
+    width: 100px;
+  }
+
+  .img-container {
+    height: 100px;
+  }
+
+  a#prevR,
+  a#nextR {
+    display: none;
+  }
+
+}
+
+
